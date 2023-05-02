@@ -1,0 +1,17 @@
+.system {
+  display: flex;
+  flex-direction: column;
+}
+.system__title {
+  margin: 0 auto 30px;
+  font-weight: 600;
+  font-size: 40px;
+  width: 800px;
+  text-align: center;
+}
+.system__image {
+  width: 1000px;
+  height: 600px;
+  margin: 0 auto 30px;
+  padding: 0;
+}

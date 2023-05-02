@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.footer__year {
+  font-size: 18px;
+  margin: 0;
+}
+.footer__choose-language {
+  list-style-type: none;
+  display: flex;
+  width: 120px;
+  padding: 0;
+  margin: 0;
+}
+.footer__language {
+  margin: 0;
+  padding: 0;
+  width: 40px;
+}

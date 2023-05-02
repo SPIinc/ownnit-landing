@@ -1,0 +1,21 @@
+.partners {
+  display: flex;
+  flex-direction: column;
+}
+.partners__title {
+  margin: 0 auto 30px;
+  font-weight: 600;
+  font-size: 40px;
+  width: 800px;
+  text-align: center;
+}
+.partners__container {
+  margin: 0 auto 30px;
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+}
+.partners__logo {
+  width: 200px;
+  height: 200px;
+}

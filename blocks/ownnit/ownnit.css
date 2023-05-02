@@ -1,0 +1,41 @@
+.ownnit {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.ownnit__title {
+  margin: 0 auto 30px;
+  font-weight: 600;
+  font-size: 40px;
+}
+.ownnit__description {
+  margin: 0 auto;
+  width: 800px;
+  font-size: 24px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.ownnit__attribute-list {
+  list-style-type: none;
+  margin: 30px auto 0;
+  width: 800px;
+  padding: 0;
+}
+.ownnit__attribute-container {
+  display: flex;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+.ownnit__attribute-icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 20px 0 0;
+  background-color: blue;
+  border-radius: 50%;
+}
+.ownnit__attribute-item {
+  font-size: 24px;
+}
