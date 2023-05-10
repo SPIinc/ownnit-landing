@@ -5,18 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="./pages/index.css" />
-    <!-- Добавляем стили из CDN -->
     <link
       rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
-    <!-- Добавляем тему по умолчанию из CDN -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css"
-    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
     <title>Ownn.it landing</title>
   </head>
 </html>
@@ -26,66 +20,65 @@
     <header class="header">
       <p class="header__logo">Ownn.it</p>
       <nav class="header__nav">
-        <li class="header__nav-item">Главная</li>
-        <li class="header__nav-item">Туториал</li>
-        <li class="header__nav-item">О нас</li>
-        <li class="header__nav-item">Саппорт</li>
+        <li id="nav-main" class="header__nav-item">Главная</li>
+        <li id="nav-tutorial" class="header__nav-item">Туториал</li>
+        <li id="nav-about" class="header__nav-item">О нас</li>
+        <li id="nav-support" class="header__nav-item">Саппорт</li>
       </nav>
-      <a class="header__login">Войти</a>
+      <a id="header-login" class="header__login">Войти</a>
     </header>
-    <main class="content"></main>
+    <!-- <main class="content"></main> -->
     <section class="ownnit">
-      <h1 class="ownnit__title">Что такое Ownn.it?</h1>
-      <p class="ownnit__description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Sapien nec sagittis
-        aliquam malesuada. Urna cursus eget nunc scelerisque viverra mauris in
-        aliquam. Suspendisse in est ante in nibh mauris cursus. Sit amet risus
-        nullam eget felis. Velit ut tortor pretium viverra. Purus faucibus
-        ornare suspendisse sed nisi lacus. Aliquam purus sit amet luctus
-        venenatis lectus magna fringilla urna. Lectus urna duis convallis
-        convallis tellus. Quisque id diam vel quam elementum. Rutrum tellus
-        pellentesque eu tincidunt tortor aliquam nulla facilisi.Nunc congue nisi
-        vitae suscipit tellus mauris a. Id consectetur purus ut faucibus
-        pulvinar elementum. Massa id neque aliquam vestibulum morbi blandit
-        cursus risus. Non arcu risus quis varius quam quisque id diam vel. Nulla
-        aliquet enim tortor at. Rhoncus mattis rhoncus urna neque viverra justo
-        nec ultrices. Sed enim ut sem viverra aliquet eget. Lacus sed turpis
-        tincidunt id. Sit amet tellus cras adipiscing. Sed velit dignissim
-        sodales ut eu sem integer vitae. Id venenatis a condimentum vitae sapien
-        pellentesque habitant morbi tristique. Enim nulla aliquet porttitor
-        lacus. Mattis aliquam faucibus purus in massa tempor nec feugiat nisl.
-        Platea dictumst quisque sagittis purus sit amet volutpat consequat.
+      <h1 id="ownnit-ownnit" class="ownnit__title">Что такое Ownn.it?</h1>
+      <p id="ownnit-description" class="ownnit__description">
+        Ownn.it привносит доверие, ценность и прозрачность в аутентичную
+        коллекцию с необратимой историей владения, существующую на блокчейне NFT
+        + NFC + TON
       </p>
-      <ul class="ownnit__attribute-list">
-        <div class="ownnit__attribute-container">
-          <p class="ownnit__attribute-icon"></p>
-          <li class="ownnit__attribute-item">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          </li>
-        </div>
-        <div class="ownnit__attribute-container">
-          <p class="ownnit__attribute-icon"></p>
-          <li class="ownnit__attribute-item">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          </li>
-        </div>
-        <div class="ownnit__attribute-container">
-          <p class="ownnit__attribute-icon"></p>
-          <li class="ownnit__attribute-item">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          </li>
-        </div>
-      </ul>
+      <div class="ownnit__wrapper">
+        <img class="ownnit__image" src="./image/example.jpg" />
+        <ul class="ownnit__attribute-list">
+          <div class="ownnit__attribute-container">
+            <p class="ownnit__attribute-icon"></p>
+            <li id="ownnit-first" class="ownnit__attribute-item">
+              Уникальный сертификат NFT. Каждый собственный сертификат на
+              вязание уникален и его можно отследить, поскольку история
+              транзакций постоянно хранится в блокчейне вместе с адресом
+              создателя, который невозможно подделать.
+            </li>
+          </div>
+          <div class="ownnit__attribute-container">
+            <p class="ownnit__attribute-icon"></p>
+            <li id="ownnit-second" class="ownnit__attribute-item">
+              Физическая NFC-метка. NFC Owwnit - это физический NFC-тег,
+              содержащий сертификат Owwnit TON. Каждый из них поставляется с
+              зашифрованным серийным номером, который записан на внутреннем
+              сервере |Ownnit.
+            </li>
+          </div>
+          <div class="ownnit__attribute-container">
+            <p class="ownnit__attribute-icon"></p>
+            <li id="ownnit-third" class="ownnit__attribute-item">
+              Децентрализованное веб-приложение. Приложение Onenote - это
+              децентрализованное веб-приложение, которое позволяет пользователям
+              сканировать собственные NFC-метки для проверки содержащегося в них
+              сертификата TON. С другой стороны, это позволяет сборщику
+              создавать и вставлять сертификат NFT в пустой тег NFC Ownnit.
+            </li>
+          </div>
+        </ul>
+      </div>
     </section>
     <section class="join">
       <button class="join__button">
-        <a href="" class="join__link">Присоединиться/Проверить</a>
+        <a id="join-button" href="" class="join__link"
+          >Присоединиться/Проверить</a
+        >
       </button>
     </section>
     <section class="advantages">
-      <h2 class="advantages__title">Lorem ipsum dolor sit amet, consectetur</h2>
-      <p class="advantages__text">
+      <h2 id="advantages-title" class="advantages__title">Почему Ownn.it?</h2>
+      <!-- <p id="advantages-text" class="advantages__text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Sapien nec sagittis
         aliquam malesuada. Urna cursus eget nunc scelerisque viverra mauris in
@@ -94,18 +87,19 @@
         ornare suspendisse sed nisi lacus. Aliquam purus sit amet luctus
         venenatis lectus magna fringilla urna. Lectus urna duis convallis
         convallis tellus.
-      </p>
-
+      </p> -->
       <div class="advantages__container">
         <div class="advantages__item">
           <img
             src="./image/0qEAUQgKHVJIAVt_WlboNfHr382brOkiTMeXEEiTBGVDLjssIDyzxEv67kbjmjzqSBOf8Qic.jpg"
             class="advantages__item-image"
           />
-          <h3 class="advantages__item-title">Lorem ipsum dolor sit amet</h3>
-          <p class="advantages__item-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <h3 id="advantages-first" class="advantages__item-title">
+            Защита вашего бренда
+          </h3>
+          <p id="advantages-first-text" class="advantages__item-text">
+            Физический тег NFC Ownit невозможно воспроизвести благодаря защите
+            блокчейна TON и высокозашифрованному серийному номеру.
           </p>
         </div>
         <div class="advantages__item">
@@ -113,10 +107,13 @@
             src="./image/0qEAUQgKHVJIAVt_WlboNfHr382brOkiTMeXEEiTBGVDLjssIDyzxEv67kbjmjzqSBOf8Qic.jpg"
             class="advantages__item-image"
           />
-          <h3 class="advantages__item-title">Lorem ipsum dolor sit amet</h3>
-          <p class="advantages__item-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <h3 id="advantages-second" class="advantages__item-title">
+            Увеличьте ценность продукта
+          </h3>
+          <p id="advantages-second-text" class="advantages__item-text">
+            Ownnit гарантирует, что каждая единица вашего продукта уникальна и
+            аутентична, поскольку каждая отдельная NFC-метка Ownit уникальна и
+            проверена компанией TON Блокчейн.
           </p>
         </div>
         <div class="advantages__item">
@@ -124,52 +121,80 @@
             src="./image/0qEAUQgKHVJIAVt_WlboNfHr382brOkiTMeXEEiTBGVDLjssIDyzxEv67kbjmjzqSBOf8Qic.jpg"
             class="advantages__item-image"
           />
-          <h3 class="advantages__item-title">Lorem ipsum dolor sit amet</h3>
-          <p class="advantages__item-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <h3 id="advantages-third" class="advantages__item-title">
+            Физическая ценность
+          </h3>
+          <p id="advantages-third-text" class="advantages__item-text">
+            Владеть им - ключ к будущему благодаря его подлинной и незаменимой
+            сути. Это дает отличные решения для брендинга деятельность. Это
+            позволяет
+          </p>
+        </div>
+        <div class="advantages__item">
+          <img
+            src="./image/0qEAUQgKHVJIAVt_WlboNfHr382brOkiTMeXEEiTBGVDLjssIDyzxEv67kbjmjzqSBOf8Qic.jpg"
+            class="advantages__item-image"
+          />
+          <h3 id="advantages-fourth" class="advantages__item-title">
+            Подтверждение права собственности
+          </h3>
+          <p id="advantages-fourth-text" class="advantages__item-text">
+            Владеть - это просто подтверждение права собственности, которое
+            может быть использовано для распознавания поддельные предметы. Он
+            предназначен для того, чтобы сталкиваться с репликацией в условиях
+            жесткой подключение к сертификату NFT. Следовательно, законный
+            коллекционер и подлинное производство могут отразить всю историю
+            предмета в тег Ownnit, особенно адрес создателя, который является
+            лучшим ключом к аутентичности.
           </p>
         </div>
       </div>
     </section>
     <section class="system">
-      <h2 class="system__title">Как это работает?</h2>
+      <h2 id="how-it-works" class="system__title">Как это работает?</h2>
       <img src="./image/example.jpg" class="system__image" />
     </section>
     <section class="partners">
-      <h2 class="partners__title">Наши партнёры</h2>
+      <h2 id="our-partners" class="partners__title">Наши партнёры</h2>
       <div class="partners__container">
-        <img
-          src="./image/0qEAUQgKHVJIAVt_WlboNfHr382brOkiTMeXEEiTBGVDLjssIDyzxEv67kbjmjzqSBOf8Qic.jpg"
-          class="partners__logo"
-        />
-        <img
-          src="./image/0qEAUQgKHVJIAVt_WlboNfHr382brOkiTMeXEEiTBGVDLjssIDyzxEv67kbjmjzqSBOf8Qic.jpg"
-          class="partners__logo"
-        />
-        <img
-          src="./image/0qEAUQgKHVJIAVt_WlboNfHr382brOkiTMeXEEiTBGVDLjssIDyzxEv67kbjmjzqSBOf8Qic.jpg"
-          class="partners__logo"
-        />
-        <img
-          src="./image/0qEAUQgKHVJIAVt_WlboNfHr382brOkiTMeXEEiTBGVDLjssIDyzxEv67kbjmjzqSBOf8Qic.jpg"
-          class="partners__logo"
-        />
-        <img
-          src="./image/0qEAUQgKHVJIAVt_WlboNfHr382brOkiTMeXEEiTBGVDLjssIDyzxEv67kbjmjzqSBOf8Qic.jpg"
-          class="partners__logo"
-        /><img
-          src="./image/0qEAUQgKHVJIAVt_WlboNfHr382brOkiTMeXEEiTBGVDLjssIDyzxEv67kbjmjzqSBOf8Qic.jpg"
-          class="partners__logo"
-        /><img
-          src="./image/0qEAUQgKHVJIAVt_WlboNfHr382brOkiTMeXEEiTBGVDLjssIDyzxEv67kbjmjzqSBOf8Qic.jpg"
-          class="partners__logo"
-        />
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <img
+              src="./image/0qEAUQgKHVJIAVt_WlboNfHr382brOkiTMeXEEiTBGVDLjssIDyzxEv67kbjmjzqSBOf8Qic.jpg"
+              class="swiper-slide"
+            />
+            <img
+              src="./image/0qEAUQgKHVJIAVt_WlboNfHr382brOkiTMeXEEiTBGVDLjssIDyzxEv67kbjmjzqSBOf8Qic.jpg"
+              class="swiper-slide"
+            />
+            <img
+              src="./image/0qEAUQgKHVJIAVt_WlboNfHr382brOkiTMeXEEiTBGVDLjssIDyzxEv67kbjmjzqSBOf8Qic.jpg"
+              class="swiper-slide"
+            />
+            <img
+              src="./image/0qEAUQgKHVJIAVt_WlboNfHr382brOkiTMeXEEiTBGVDLjssIDyzxEv67kbjmjzqSBOf8Qic.jpg"
+              class="swiper-slide"
+            />
+            <img
+              src="./image/0qEAUQgKHVJIAVt_WlboNfHr382brOkiTMeXEEiTBGVDLjssIDyzxEv67kbjmjzqSBOf8Qic.jpg"
+              class="swiper-slide"
+            />
+            <img
+              src="./image/0qEAUQgKHVJIAVt_WlboNfHr382brOkiTMeXEEiTBGVDLjssIDyzxEv67kbjmjzqSBOf8Qic.jpg"
+              class="swiper-slide"
+            />
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
       </div>
     </section>
     <section class="join">
       <button class="join__button">
-        <a href="" class="join__link">Присоединиться/Проверить</a>
+        <a id="join-button-2" href="" class="join__link"
+          >Присоединиться/Проверить</a
+        >
       </button>
     </section>
 
@@ -182,5 +207,5 @@
       </ul>
     </footer>
   </div>
-  <script type="module" src="./pages/index.js "></script>
+  <script type="module" src="./pages/index.js"></script>
 </body>
