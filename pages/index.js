@@ -18,7 +18,7 @@ let languageContent = {
     'join-button-2': 'Join/Check',
     'nav-support': 'Support',
     'header-login': 'Log in',
-    'ownnit-ownnit': 'What is it Ownn.it ?',
+    'ownnit-ownnit': 'What is it Ownnit ?',
     'ownnit-description':
       'OwnnIt brings trust, value, and transparency into authentic collections with irreversible ownership history exists on NFT + NFC + TON Blockchain',
     'ownnit-first':
@@ -27,7 +27,7 @@ let languageContent = {
       'Physical NFC Tag. NFC Owwnit is a physical NFC Tag that contains Owwnit TON Certificate. Each one comes with an encrypted serial number that is recorded on an internal server of|Ownnit.',
     'ownnit-third':
       'Decentralized Web App. Ownnit app is a decentralized web-based application that allows users to scan Ownnit NFC tags to inspect the contained TON Certificate. On the other hand, it lets collector create and insert NFT Certificate to a blank NFC Ownnit tag.',
-    'advantages-title': 'Why Ownn.it?',
+    'advantages-title': 'Why Ownnit?',
     'advantages-first': 'Protect Your Brand',
     'advantages-first-text':
       'The physical NFC Ownnit tag is impossible to replicate thanks to the protection of TON Blockcahain and highly encrypted serial number.',
