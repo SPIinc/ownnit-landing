@@ -1,6 +1,6 @@
 .page {
-  max-width: 1280px;
+  max-width: 1600px;
   font-family: 'Circe', Arial, sans-serif;
-  background-color: bisque;
+  background: #f2f2f2;
   margin: 0 auto;
 }

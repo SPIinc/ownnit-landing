@@ -1,45 +1,107 @@
 .partners {
   display: flex;
   flex-direction: column;
+  margin: 0 0 172px 0;
 }
 .partners__title {
-  margin: 0 auto 30px;
-  font-weight: 600;
-  font-size: 40px;
-  width: 800px;
-  text-align: center;
+  margin: 0 240px 80px auto;
 }
-.partners__container {
-  width: 1100px;
-  overflow: hidden;
-  margin: 0 auto;
-}
-.partners__container-wrapper {
+.partners__wrapper-main {
   display: flex;
-  justify-content: space-between;
+  margin: 0 264px 0 200px;
 }
-.partners__logo {
-  width: 200px;
-  height: 200px;
+.partners__wrapper-facts {
+  margin: 0 40px 0 0;
+  display: flex;
+  flex-direction: column;
 }
-.swiper {
-  margin: 0 auto;
-  width: 1000px;
-  height: 300px;
-  justify-content: space-between;
-  overflow: visible !important;
+.partners__fact {
+  width: 278px;
+  height: 260px;
+  border: 1px solid #000000;
+  border-radius: 40px;
 }
-.swiper-slide {
-  border-radius: 10px;
+.partners__fact:last-child {
+  margin-left: 20px;
+  margin-right: 0;
 }
-.swiper-wrapper {
-  width: 700px !important;
+.partners__fact_small {
+  width: 128px;
+  height: 119px;
+  border-radius: 25px;
+  margin: 0 0 0 0;
 }
-.swiper-button-prev::after {
-  position: absolute;
-  left: -50px;
+.partners__fact-title {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 110%;
+  /* or 79px */
+
+  text-transform: uppercase;
+
+  /* Text_black */
+
+  color: #131313;
+  margin: 16px 104px 16px 16px;
 }
-.swiper-button-next::after {
-  position: absolute;
-  right: -50px;
+.partners__fact-title_small {
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+
+  margin: 14px auto 13px 15px;
+  /* Text_black */
+}
+.partners__fact-text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  /* or 29px */
+
+  font-feature-settings: 'liga' off;
+
+  /* Text_black */
+
+  color: #131313;
+
+  margin: 0 45px auto 49px;
+}
+.partners__fact-text_small {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0 17px auto 15px;
+}
+.partners__wrapper-small {
+  display: flex;
+  margin: 0 0 20px 20px;
+}
+.partners__partner {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 110%;
+  /* identical to box height, or 44px */
+
+  text-transform: uppercase;
+
+  color: #131313;
+  margin: 0 0 4px 0;
+  display: flex;
+  /* text-decoration-line: underline; */
+  
+}
+.partners__partner_active{
+  width: fit-content;
+  border-bottom: 1px solid #131313;
+}
+.partners__arrow-up {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-image: url('../../image/arrow-up.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 0 0 16px;
 }

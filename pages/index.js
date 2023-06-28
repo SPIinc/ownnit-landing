@@ -80,6 +80,10 @@ let languageContent = {
     'nav-main': 'хз чет на китайском',
     'join-button-2': 'что-то на китайском',
   },
+  FR: {
+    'nav-main': 'хз чет на французском',
+    'join-button-2': 'что-то на французском',
+  },
 };
 function swithcLang(lang) {
   for (let key in languageContent[lang]) {
