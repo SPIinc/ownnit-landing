@@ -8,7 +8,7 @@
 }
 .partners__wrapper-main {
   display: flex;
-  margin: 0 264px 0 200px;
+  margin: 0 auto;
 }
 .partners__wrapper-facts {
   margin: 0 40px 0 0;
@@ -86,12 +86,11 @@
   text-transform: uppercase;
 
   color: #131313;
-  margin: 0 0 4px 0;
+  margin: 0 64px 4px 0;
   display: flex;
   /* text-decoration-line: underline; */
-  
 }
-.partners__partner_active{
+.partners__partner_active {
   width: fit-content;
   border-bottom: 1px solid #131313;
 }
@@ -104,4 +103,44 @@
   background-position: center;
   background-repeat: no-repeat;
   margin: 0 0 0 16px;
+}
+@media (max-width: 1280px) {
+  .partners__title {
+    margin-bottom: 40px;
+    margin-right: 40px;
+  }
+  .partners__fact {
+    width: 240px;
+    height: 230px;
+  }
+  .partners__fact_small {
+    width: 108px;
+    height: 99px;
+  }
+  .partners__fact-title {
+    margin-bottom: 8px;
+  }
+  .partners__fact-text {
+    margin: 0 28px auto;
+  }
+  .partners__wrapper-facts {
+    margin-right: 20px;
+  }
+  .partners__wrapper-small {
+    margin-bottom: 10px;
+  }
+  .partners__fact-title_small {
+    margin: 10px auto 4px 12px;
+  }
+  .partners__fact-text_small {
+    margin: 0 15px auto 12px;
+    font-size: 10px;
+  }
+  .partners__partner {
+    font-size: 33px;
+    margin-right: 32px;
+  }
+  .partners__arrow-up {
+    margin-left: 8px;
+  }
 }

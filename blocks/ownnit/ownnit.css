@@ -1,7 +1,7 @@
 .ownnit {
   margin: 0;
   padding: 0;
-  height: 1051px;
+  height: auto;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -50,7 +50,7 @@
   font-size: 24px;
   line-height: 120%;
   color: #131313;
-  margin: 0 31px 16px 3px;
+  margin: 0 31px 16px 16px;
   width: 549px;
 }
 .ownnit__wrapper {
@@ -75,17 +75,17 @@
   font-size: 12px;
   line-height: 18px;
   text-transform: uppercase;
-  margin: 80px 549px -2px auto;
+  margin: 80px auto -2px 972px;
   color: #131313;
 }
 .ownnit__hello_system {
-  margin-right: 201px;
+  margin-left: 1280px;
 }
 .ownnit__hello_advantages {
-  margin-right: 1346px;
+  margin-left: 200px;
 }
-.ownnit__hello_partners{
-  margin-right: 619px;
+.ownnit__hello_partners {
+  margin-left: 820px;
 }
 .ownnit__circle {
   background-image: url('../../image/circle.svg');
@@ -122,7 +122,78 @@
   font-size: 36px;
   line-height: 110%;
   border-radius: 42px;
+  text-transform: uppercase;
 }
 .ownnit:visited {
   color: #ffffff;
+}
+@media (max-width: 1440px) {
+  .ownnit__circle {
+    margin-left: 43px;
+  }
+  .ownnit__hello {
+    margin-left: 810px;
+  }
+  .ownnit__circle_system {
+    margin-left: 380px;
+  }
+  .ownnit__hello_system {
+    margin-left: 890px;
+    margin-right: auto;
+  }
+  .ownnit__circle_advantages {
+    margin-left: 520px;
+  }
+  .ownnit__hello_advantages {
+    margin-left: 120px;
+  }
+  .ownnit__hello_partners {
+    margin-left: 510px;
+  }
+  .ownnit__circle_partners {
+    margin-left: 800px;
+  }
+  .ownnit__circle_footer {
+    margin-left: 1120px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .ownnit__attribute-container {
+    width: 904px;
+  }
+  .ownnit__attribute-list {
+    width: auto;
+  }
+  .ownnit__attribute-image {
+    width: 363px;
+  }
+  .ownnit__attribute-text {
+    font-size: 20px;
+    width: 490px;
+  }
+  .ownnit__circle_system {
+    margin-left: 320px;
+  }
+  .ownnit__hello_system {
+    margin-left: 850px;
+  }
+  .ownnit__circle_advantages {
+    margin-left: 480px;
+  }
+  .ownnit__hello_advantages {
+    margin-left: 24px;
+  }
+  .ownnit__button{
+    margin-bottom: 30px;
+  }
+  .ownnit__hello_partners{
+    margin-left: 540px;
+  }
+  .ownnit__circle_partners{
+    margin-left: 780px;
+  }
+  .ownnit__circle_footer{
+    margin-left: 940px;
+  }
 }
