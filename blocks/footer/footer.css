@@ -10,9 +10,9 @@
   flex-direction: column;
 }
 .footer__span {
-position: absolute;
-top: 2px;
-left: 0px;
+  position: absolute;
+  top: 2px;
+  left: 0px;
 }
 .footer__year {
   font-weight: 400;
@@ -22,8 +22,8 @@ left: 0px;
   /* identical to box height, or 29px */
   margin: 0 234px 0 201px;
   font-feature-settings: 'liga' off;
-padding-top: 4px;  /* Color_button */
-position: relative;
+  padding-top: 4px; /* Color_button */
+  position: relative;
   color: #353535;
 }
 .footer__email {
@@ -72,21 +72,31 @@ position: relative;
   flex-grow: 0;
 }
 @media (max-width: 1440px) {
-  .footer__year{
-margin-left: 120px;
+  .footer__year {
+    margin-left: 120px;
   }
-  .footer__email{
+  .footer__email {
     margin-right: 460px;
   }
 }
 @media (max-width: 1280px) {
-  .footer__year{
-margin-left: 60px;
+  .footer__year {
+    margin-left: 60px;
   }
-  .footer__email{
+  .footer__email {
     margin-right: 260px;
   }
-  .footer__items{
+  .footer__items {
     margin-bottom: 30px;
+  }
+}
+@media (max-width: 1024px) {
+  .footer__year{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer__email{
+    margin-right: auto;
+    margin-left: auto;
   }
 }

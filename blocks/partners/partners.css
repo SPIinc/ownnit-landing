@@ -3,6 +3,9 @@
   flex-direction: column;
   margin: 0 0 172px 0;
 }
+.partners__wrapper-table{
+  display: flex;
+}
 .partners__title {
   margin: 0 240px 80px auto;
 }
@@ -142,5 +145,29 @@
   }
   .partners__arrow-up {
     margin-left: 8px;
+  }
+}
+@media (max-width: 1024px) {
+  .partners__wrapper-table{
+    flex-direction: column;
+  }
+  .partners__wrapper-small{
+    margin-left: 0px;
+justify-content: space-around;
+  }
+  .partners__fact:last-child{
+    margin-left: 0;
+  }
+  .partners__fact_first{
+    margin-bottom: 10px;
+  }
+  .partners__wrapper-partners {
+    display: flex;
+    flex-direction: column;
+    margin: auto auto;
+    gap: 20px;
+  }
+  .partners{
+    margin-bottom: 70px;
   }
 }
