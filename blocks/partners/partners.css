@@ -170,4 +170,7 @@ justify-content: space-around;
   .partners{
     margin-bottom: 70px;
   }
+  .partners__partner{
+    margin-right: 0;
+  }
 }
