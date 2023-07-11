@@ -255,22 +255,99 @@
   .ownnit__hello_system {
     margin-left: 600px;
   }
-  .ownnit__circle_system{
+  .ownnit__circle_system {
     margin-left: 230px;
   }
-  .ownnit__hello_advantages{
+  .ownnit__hello_advantages {
     margin-left: 30px;
   }
-  .ownnit__circle_advantages{
+  .ownnit__circle_advantages {
     margin-left: 400px;
   }
-  .ownnit__hello_partners{
+  .ownnit__hello_partners {
     margin-left: 360px;
   }
-  .ownnit__circle_partners{
+  .ownnit__circle_partners {
     margin-left: 620px;
   }
-  .ownnit__circle_footer{
+  .ownnit__circle_footer {
     margin-left: 690px;
+  }
+}
+@media (max-width: 768px) {
+  .ownnit__hello {
+    margin-top: 43px;
+    margin-left: 207px;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .ownnit__circle {
+    margin-left: 8px;
+  }
+  .ownnit__divider {
+    margin-bottom: 27px;
+  }
+  .ownnit__attribute-image {
+    display: none;
+  }
+  .ownnit__attribute-container {
+    width: 300px;
+    margin-bottom: 12px;
+  }
+  .ownnit__attribute-wrapper-y {
+    width: 300px;
+    box-shadow: none;
+  }
+  .ownnit__attribute-title {
+    margin-top: 15px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 270px;
+  }
+  .ownnit__attribute-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 268px;
+  }
+  .ownnit__button {
+    margin: 28px auto 0;
+    width: 300px;
+    height: 42px;
+    border-radius: 20px;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+  }
+  .ownnit__hello_system {
+    margin-top: 43px;
+    margin-left: 200px;
+  }
+  .ownnit__hello_advantages {
+    margin-left: 208px;
+  }
+  .ownnit__hello_partners {
+    margin-left: 39px;
+  }
+  .ownnit__circle_system {
+    margin-left: 71px;
+  }
+  .ownnit__circle_advantages {
+    margin-left: 150px;
+  }
+  .ownnit__circle_partners {
+    margin-left: 235px;
+  }
+  .ownnit__circle_footer{
+    margin-left: 288px;
   }
 }

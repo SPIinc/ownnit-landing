@@ -3,7 +3,7 @@
   flex-direction: column;
   margin: 0 0 172px 0;
 }
-.partners__wrapper-table{
+.partners__wrapper-table {
   display: flex;
 }
 .partners__title {
@@ -148,17 +148,17 @@
   }
 }
 @media (max-width: 1024px) {
-  .partners__wrapper-table{
+  .partners__wrapper-table {
     flex-direction: column;
   }
-  .partners__wrapper-small{
+  .partners__wrapper-small {
     margin-left: 0px;
-justify-content: space-around;
+    justify-content: space-around;
   }
-  .partners__fact:last-child{
+  .partners__fact:last-child {
     margin-left: 0;
   }
-  .partners__fact_first{
+  .partners__fact_first {
     margin-bottom: 10px;
   }
   .partners__wrapper-partners {
@@ -167,10 +167,98 @@ justify-content: space-around;
     margin: auto auto;
     gap: 20px;
   }
-  .partners{
+  .partners {
     margin-bottom: 70px;
   }
-  .partners__partner{
+  .partners__partner {
     margin-right: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .partners__title {
+    margin: 0 10px 40px auto;
+  }
+  .partners__wrapper-partners {
+    display: none;
+  }
+  .partners__wrapper-partners-2 {
+    display: flex;
+    margin: 0 auto 16px 10px;
+    gap: 4px;
+  }
+  .partners__wrapper-partners-2 > p {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0em;
+    height: 15px;
+  }
+  .partners__arrow-up {
+    width: 12px;
+    height: 12px;
+    margin-left: 3px;
+  }
+  .partners__fact_first {
+    width: 146px;
+    height: 136px;
+    border-radius: 10px;
+    margin-right: 6px;
+    margin-bottom: 0px;
+  }
+  .partners__wrapper-main {
+    margin: 0 auto;
+    width: 300px;
+    flex-direction: column;
+  }
+  .partners__fact-title {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+  }
+  .partners__fact-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+  }
+  .partners__wrapper-table {
+    flex-direction: row;
+  }
+  .partners__fact_hidden {
+    display: none;
+  }
+  .partners__wrapper-facts {
+    width: 146px;
+    margin-right: 0;
+  }
+  .partners__fact_small {
+    width: 69px;
+    height: 65px;
+    border-radius: 10px;
+  }
+  .partners__fact-title_small {
+    font-size: 8px;
+    font-weight: 800;
+    line-height: 12px;
+    letter-spacing: 0em;
+    margin-left: 8px;
+  }
+  .partners__fact-text_small {
+    font-size: 6px;
+    font-weight: 400;
+    line-height: 7px;
+    letter-spacing: 0em;
+    margin-left: 8px;
+  }
+  .partners__wrapper-small {
+    margin-bottom: 4px;
+    justify-content: space-between;
+  }
+  .partners__fact_visible{
+    margin: 0 0 0 auto;
+  }
+  .partners{
+    margin-bottom: 48px;
   }
 }

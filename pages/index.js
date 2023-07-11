@@ -97,7 +97,38 @@ function swithcLang(lang) {
 //   buttonItem.addEventListener('click', () => swithcLang(buttonItem.innerHTML));
 // }
 //стало
-let containerButtons = document.querySelector('.footer__choose-language');
-containerButtons.addEventListener('click', (event) => {
-  swithcLang(event.target.innerHTML);
+// let containerButtons = document.querySelector('.footer__choose-language');
+// containerButtons.addEventListener('click', (event) => {
+//   swithcLang(event.target.innerHTML);
+// });
+
+const openBurgerMenu = document.getElementById('header__burger-open');
+openBurgerMenu.addEventListener('click', () => {
+  if (openBurgerMenu.classList.contains('header__burger-button_open')) {
+    openBurgerMenu.classList.remove('header__burger-button_open');
+    document.querySelector('.header__title').style.transition =
+      'margin-left 0.5s ease';
+    document.querySelector('.header__title').style.marginLeft = '10px';
+    document.querySelector('.header__subtitle').style.transition =
+      'margin-left 0.5s ease';
+    document.querySelector('.header__subtitle').style.marginLeft = '10px';
+    document.querySelector('.header__button').style.transition =
+      'margin-left 0.5s ease';
+    document.querySelector('.header__button').style.marginLeft = '10px';
+    document.querySelector('.header__nav').style.display = 'none';
+  } else {
+    document.querySelector('.header__title').style.transition =
+      'margin-left 0.5s ease';
+    document.querySelector('.header__title').style.marginLeft = '-100%';
+    document.querySelector('.header__subtitle').style.transition =
+      'margin-left 0.5s ease';
+    document.querySelector('.header__subtitle').style.marginLeft = '-200%';
+    document.querySelector('.header__button').style.transition =
+      'margin-left 0.5s ease';
+    document.querySelector('.header__button').style.marginLeft = '-100%';
+    setTimeout(() => {
+      document.querySelector('.header__nav').style.display = 'FLEX';
+    }, 300);
+    openBurgerMenu.classList.add('header__burger-button_open');
+  }
 });

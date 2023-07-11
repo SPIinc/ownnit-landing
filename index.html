@@ -19,20 +19,26 @@
   <div class="page">
     <header class="header">
       <!-- <p class="header__logo">Ownnit</p> -->
-      <nav class="header__nav">
-        <li id="nav-ownn" class="header__nav-item">Ownn.it</li>
-        <li id="nav-main" class="header__nav-item">Main</li>
-        <li id="nav-tutorial" class="header__nav-item">Tutorial</li>
-        <li id="nav-about" class="header__nav-item">About us</li>
-        <li id="nav-support" class="header__nav-item">Support</li>
-        <li id="nav-login" class="header__nav-item">Log in</li>
-        <li
-          id="nav-language"
-          class="header__nav-item header__nav-item_language"
-        >
-          En<span class="header__nav-span"></span>
-        </li>
-      </nav>
+      <div class="header__wrapper">
+        <nav class="header__nav">
+          <li id="nav-ownn" class="header__nav-item">Ownn.it</li>
+          <li id="nav-main" class="header__nav-item">Main</li>
+          <li id="nav-tutorial" class="header__nav-item">Tutorial</li>
+          <li id="nav-about" class="header__nav-item">About us</li>
+          <li id="nav-support" class="header__nav-item">Support</li>
+          <div class="header__nav-wrapper">
+            <li id="nav-login" class="header__nav-item">Log in</li>
+            <li
+              id="nav-language"
+              class="header__nav-item header__nav-item_language"
+            >
+              En<span class="header__nav-span"></span>
+            </li>
+          </div>
+        </nav>
+        <div id="header__burger-open" class="header__burger-button"></div>
+      </div>
+
       <h1 class="header__title">OWNN.IT</h1>
       <h2 class="header__subtitle">
         OwnnIt brings trust, value, and transparency into authentic collections
@@ -132,7 +138,13 @@
         </div>
         <div class="system__wrapper-y system__steps">
           <div class="system__step">
-            <h4 class="system__step-title">Step 1.</h4>
+            <div class="system__step-wrapper">
+              <h4 class="system__step-title">Step 1.</h4>
+              <img
+                class="system__icon"
+                src="./image/icon-firdt-step-small.svg"
+              />
+            </div>
             <p class="system__step-text">
               Create an account on the TON blockchain by following the
               instructions on the official website or through an app that
@@ -140,7 +152,14 @@
             </p>
           </div>
           <div class="system__step">
-            <h4 class="system__step-title">Step 2.</h4>
+            <div class="system__step-wrapper">
+              <h4 class="system__step-title">Step 2.</h4>
+              <img
+                class="system__icon"
+                src="./image/icon-second-step-smal.svg"
+              />
+            </div>
+
             <p class="system__step-text">
               Identify the items for which you want to create a unique
               identifier on the TON blockchain. This can include clothing,
@@ -148,7 +167,13 @@
             </p>
           </div>
           <div class="system__step">
-            <h4 class="system__step-title">Step 3.</h4>
+            <div class="system__step-wrapper">
+              <h4 class="system__step-title">Step 3.</h4>
+              <img
+                class="system__icon system__icon_three"
+                src="./image/icon-third-step-small.svg"
+              />
+            </div>
             <p class="system__step-text">
               Use the TON blockchain application or interface to upload data
               about each item to the blockchain. This can include information
@@ -159,6 +184,7 @@
           </div>
         </div>
       </div>
+      <button class="ownnit__button">Check authenticity</button>
     </section>
     <section class="advantages">
       <p class="ownnit__hello ownnit__hello_advantages">ownn.it</p>
@@ -169,7 +195,7 @@
         Why Ownnit?
       </h2>
       <div class="advantages__wrapper-x">
-        <div class="advantages__wrapper-y">
+        <div class="advantages__wrapper-y-main">
           <div class="advantages__item-wrapper">
             <div class="advantages__item-icon advantages__item-icon-1"></div>
             <div class="advantages__wrapper-y">
@@ -218,6 +244,41 @@
       <h2 id="our-partners" class="system__title partners__title">
         Our partners
       </h2>
+      <div class="partners__wrapper-partners partners__wrapper-partners-2">
+        <p class="partners__partner partners__partner_active">
+          balmain<span class="partners__arrow-up"></span>
+        </p>
+        <p class="partners__partner">
+          guess<span class="partners__arrow-up"></span>
+        </p>
+        <p class="partners__partner">
+          hermes<span class="partners__arrow-up"></span>
+        </p>
+        <p class="partners__partner">
+          obey<span class="partners__arrow-up"></span>
+        </p>
+        <p class="partners__partner">
+          louis vuitton<span class="partners__arrow-up"></span>
+        </p>
+        <p class="partners__partner">
+          dolce & gabbana<span class="partners__arrow-up"></span>
+        </p>
+        <p class="partners__partner">
+          barbour<span class="partners__arrow-up"></span>
+        </p>
+        <p class="partners__partner">
+          ralph lauren<span class="partners__arrow-up"></span>
+        </p>
+        <p class="partners__partner">
+          billionaire boys club<span class="partners__arrow-up"></span>
+        </p>
+        <p class="partners__partner">
+          c.p. company<span class="partners__arrow-up"></span>
+        </p>
+        <p class="partners__partner">
+          chanel<span class="partners__arrow-up"></span>
+        </p>
+      </div>
       <div class="partners__wrapper-main">
         <div class="partners__wrapper-table">
           <div class="partners__fact partners__fact_first">
@@ -261,13 +322,19 @@
                 </p>
               </div>
             </div>
-            <div class="partners__fact">
+            <div class="partners__fact partners__fact_hidden">
               <h4 class="partners__fact-title">20+</h4>
               <p class="partners__fact-text">
                 partners from the world of art and entertainment
               </p>
             </div>
           </div>
+        </div>
+        <div class="partners__fact partners__fact_first partners__fact_visible">
+          <h4 class="partners__fact-title">20+</h4>
+          <p class="partners__fact-text">
+            partners from the world of art and entertainment
+          </p>
         </div>
 
         <div class="partners__wrapper-partners">
@@ -324,7 +391,13 @@
             <li class="footer__item">Log in</li>
           </ul>
         </div>
-        <p class="footer__email">ceo@ownnit.com</p>
+        <div class="footer__wrapper-mobile">
+          <p class="footer__join footer__join_mobile">JOIN</p>
+          <p class="footer__email">ceo@ownnit.com</p>
+          <p class="footer__year footer__year_mobile">
+            <span class="footer__span">© </span>2023
+          </p>
+        </div>
       </div>
     </footer>
   </div>
