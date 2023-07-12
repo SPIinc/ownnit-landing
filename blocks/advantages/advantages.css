@@ -15,7 +15,6 @@
 .advantages__wrapper-y-main{
   display: flex;
   flex-direction: column;
-  width: 300px;
   height: 320px;
 }
 .advantages__item-wrapper {
