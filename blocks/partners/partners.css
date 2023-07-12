@@ -13,6 +13,12 @@
   display: flex;
   margin: 0 auto;
 }
+.partners__wrapper-partners-2 {
+  display: none;
+}
+.partners__fact_visible {
+  display: none;
+}
 .partners__wrapper-facts {
   margin: 0 40px 0 0;
   display: flex;
@@ -167,6 +173,9 @@
     margin: auto auto;
     gap: 20px;
   }
+  .partners__wrapper-partners-2 {
+    display: none;
+  }
   .partners {
     margin-bottom: 70px;
   }
@@ -174,7 +183,7 @@
     margin-right: 0;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .partners__title {
     margin: 0 10px 40px auto;
   }
@@ -255,10 +264,12 @@
     margin-bottom: 4px;
     justify-content: space-between;
   }
-  .partners__fact_visible{
+  .partners__fact_visible {
+    display: flex;
+    flex-direction: column;
     margin: 0 0 0 auto;
   }
-  .partners{
+  .partners {
     margin-bottom: 48px;
   }
 }
